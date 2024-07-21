@@ -1,4 +1,4 @@
-pipeline {
+$pipeline {
     agent any 
     stages {
   stage('checkout') { 
@@ -24,7 +24,10 @@ pipeline {
  stage('Deploy') { 
       
             steps {
-                echo 'deploying'
+                script {
+                    def deployDir="C:\\Users\\amine pc\\Desktop\\Deloy"
+                    bat "copy index.php $(deployDir)\\"
+                    echo "Déploiment réussi dans $(deployDir)"
 
                   
             }
