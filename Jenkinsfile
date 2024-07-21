@@ -36,4 +36,16 @@ $pipeline {
         }
         
         }
+
+        post { 
+            always { 
+                echo "This run always"
+            }
+            success { 
+                echo " This runs on success"
+            }
+            failed { 
+                echo "tis runs on faileds" 
+            }
+        }
     }
