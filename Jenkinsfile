@@ -4,7 +4,7 @@ pipeline {
   stage('checkout') { 
       
             steps {
-                git branch:"main",url:https://github.com/zerroukiimane/TESTRPIPELINE.git"
+                git branch:"main",url:"https://github.com/zerroukiimane/TESTRPIPELINE.git"
             }
         }
         stage('Build') { 
