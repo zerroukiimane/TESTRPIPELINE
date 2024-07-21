@@ -27,7 +27,7 @@ $pipeline {
                 script {
                     def deployDir="C:\\Users\\amine pc\\Desktop\\Deploy"
                     
-                    bat "copy index.php $(deployDir)\\"
+                  bat "copy index.php ${deployDir}\\"
                     
                     echo "Déploiment réussi dans $(deployDir)"
 
